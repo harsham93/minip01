@@ -26,6 +26,12 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('pages.register');
 });
+Route::get('/viewmessage', function () {
+    return view('pages.viewmessage');
+});
+Route::get('/bootstrapcard', function () {
+    return view('pages.bootstrapcard');
+});
 Route::post('/contact', function () {
 
     $data= request()->all();
