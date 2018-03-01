@@ -7,30 +7,30 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{route('index')}}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" href="{{route('about')}}">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="{{route('contact')}}">Contact</a>
             </li></ul>
 
 
         <form class="form-inline my-2 my-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="/register">SignUp</a>
+                <a class="nav-link" href="{{route('register')}}">SignUp</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/login">SignIn</a>
+                <a class="nav-link" href="{{route('login')}}">SignIn</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/">Logout</a>
+                <a class="nav-link" href="{{route('index')}}">Logout</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/viewmessage">View Messages</a>
+                <a class="nav-link" href="{{route('viewmessage')}}">View Messages</a>
             </li>
-
+            <li><a href="{{route('thanks',['name' => 'IS601' ])}}">Thanks</a></li>
         </form>
     </div>
 </nav>
